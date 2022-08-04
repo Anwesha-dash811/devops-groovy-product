@@ -17,7 +17,10 @@
 		<java.version>1.8</java.version>
 	</properties>
 	<packaging>war</packaging>
+<<<<<<< HEAD
 	
+=======
+>>>>>>> fe3f5ef9b020e017bcb2b0cf3e3f79a7b2b50874
 	<distributionManagement>
 <repository>
 <id>release</id>
