@@ -32,10 +32,10 @@
 </distributionManagement>
 
 <scm>
-<connection>scm:git:git@github.com:Anwesha-dash811/devops-groovy-products.git</connection>
-<developerConnection>scm:git:git@github.com:Anwesha-dash811/devops-groovy-products.git</developerConnection>
-<url>git@github.com:krishnamurthypradeep/devops-groovy-products.git</url>
-<tag>v0.0.1</tag>
+<connection>scm:git:https://github.com/Anwesha-dash811/devops-groovy-products.git</connection>
+<developerConnection>scm:git:https://github.com/Anwesha-dash811/devops-groovy-products.git</developerConnection>
+<url>git@github.com:/spring-boot-devops.git</url>
+<tag>SNAPSHOT</tag>
 </scm>
 	
 	<dependencies>
