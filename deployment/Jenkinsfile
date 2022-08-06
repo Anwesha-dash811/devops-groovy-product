@@ -4,7 +4,6 @@ def mvnHome
 
 stage('Prepare') {
 git url: 'git@github.com:Anwesha-dash811/devops-groovy-product.git', branch: 'initial_release'
-
 mvnHome = tool 'mvn'
 
 }
