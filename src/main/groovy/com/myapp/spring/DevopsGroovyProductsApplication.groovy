@@ -13,7 +13,8 @@ class DevopsGroovyProductsApplication extends SpringBootServletInitializer{
 	}
 	@GetMapping
 	def sayHello() {
-		return "Hello"
+		a=System.console().readline 'Username'
+		return a
 	}
 
 }
