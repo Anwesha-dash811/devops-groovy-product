@@ -41,6 +41,19 @@ sh "docker build -t anwesha811/devops-groovy-products:latest ."
 bat("docker build -t anwesha811/devops-groovy-products:latest .")
 }
 }
+stage('Docker Push'){
+withCredentials([userNamePassword(credentialsId:'DockerHubToken',usernameVariable:'DockerHubTokenUser',
+passwordVariable:'DockerHubTokenPassword')]{
+if (isUnix()) {
+sh "docker login -u ${env.DockerHubTokenUser} -p ${DockerHubTokenPassword}"
+sh 'docker push anwesha811/devops-groovy-products:latest'
+} 
+else {
+bat ("docker login -u ${env.DockerHubTokenUser} -p ${DockerHubTokenPassword}")
+bat ('docker push anwesha811/devops-groovy-products:latest')
+}
+}
+}
 
 stage('Sonar') {
 if (isUnix()) {
